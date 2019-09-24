@@ -12,9 +12,9 @@ public class ShopUI {
         Product movie2 = new Movie("arlmkjf");
 
         ProductShop productShop = new ProductShop();
-        productShop.addProduct(1,movie1);
-        productShop.addProduct(2,movie2);
-        productShop.addProduct(3,game1);
+        productShop.addProduct(movie1);
+        productShop.addProduct(movie2);
+        productShop.addProduct(game1);
         System.out.println(productShop.showPrice(3,5));
         System.out.println(productShop.showProduct(1));
     }

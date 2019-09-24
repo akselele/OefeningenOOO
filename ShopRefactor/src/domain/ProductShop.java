@@ -7,14 +7,18 @@ import java.util.Map;
 
 public class ProductShop {
     private Map<Integer,Product> products;
+    private int teller;
 
 
     public ProductShop(){
         this.products = new HashMap();
+        this.teller = 0;
     }
 
-  public void addProduct(int id,Product product){
-        products.put(id,product);
+  public void addProduct(Product product){
+        int x = teller +1;
+        products.put(x, product);
+        this.teller = x;
   }
 
   public Product showProduct(int id){
@@ -24,6 +28,16 @@ public class ProductShop {
   public double showPrice(int id,int days){
        return products.get(id).getPrice(days);
   }
+  public boolean isProductBeschikbaar(int id)
+  {
+      return products.get(id).getBeschikbaar();
+  }
+  public void uitgeleend(int id){
+        products.get(id).setBeschikbaar(false);
+  }
+
+
+
 
 
 }
