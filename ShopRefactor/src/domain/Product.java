@@ -1,24 +1,26 @@
 package domain;
 
 public abstract class Product {
-    private String Id, Naam;
-    private char Type;
+    private String Naam;
 
-
-    public Product(String Id, String Naam,char Type){
+    public Product(String Naam){
+        if(Naam.trim().isEmpty()){
+            throw new DomainException("de naam kan niet leeg zijn");
+        }
         this.Naam = Naam;
-        this.Id = Id;
-    }
 
-    public String getId() {
-        return Id;
     }
 
     public String getNaam() {
         return Naam;
     }
 
-    public char getType() {
-        return Type;
+    public abstract String getType();
+
+    public abstract double getPrice(int days);
+
+    public String toString(){
+        return "Naam: " + Naam + "\nType: " + getType();
     }
+
 }

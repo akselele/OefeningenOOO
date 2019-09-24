@@ -1,31 +1,29 @@
 package domain;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public class ProductShop {
-    private ArrayList<Product> products;
+    private Map<Integer,Product> products;
 
 
     public ProductShop(){
-        ArrayList products = new ArrayList();
+        this.products = new HashMap();
     }
 
-    public void addProduct(Product p){
-        products.add(p);
-    }
+  public void addProduct(int id,Product product){
+        products.put(id,product);
+  }
 
-    public double berekenPrijs(int id){
-        for(int i = 0; i < products.size(); i++){
-            int idi = Integer.parseInt(products.get(i).getId());
-            if(idi == id){
-                Product p = products.get(i);
-                if(p instanceof Game){
+  public Product showProduct(int id){
+       return products.get(id);
+  }
 
-                }
-                if(p instanceof Movie){
+  public double showPrice(int id,int days){
+       return products.get(id).getPrice(days);
+  }
 
-                }
-            }
-        }
-    }
+
 }

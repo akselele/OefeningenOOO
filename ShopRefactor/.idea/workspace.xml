@@ -44,10 +44,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ShopUI">
     <configuration name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Shop" />
       <module name="ShopRefactor" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.ShopUI" />
+      <module name="ShopRefactor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShopUI" />
         <item itemvalue="Application.Shop" />
       </list>
     </recent_temporary>
@@ -83,6 +97,7 @@
       <updated>1568895065468</updated>
       <workItem from="1568895069194" duration="1014000" />
       <workItem from="1568969185700" duration="4680000" />
+      <workItem from="1569329009668" duration="4736000" />
     </task>
     <servers />
   </component>
