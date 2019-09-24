@@ -36,6 +36,16 @@ public class ProductShop {
         products.get(id).setBeschikbaar(false);
   }
 
+  //Deze functie voegt de ingelezen producten in de map
+  public void leesProducten(Map producten){
+        this.products = producten;
+  }
+
+  //Return de map om het uit te kunnen schrijven
+    public Map<Integer,Product> getProducten(){
+        return products;
+    }
+
 
 
 
