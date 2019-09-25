@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a1b64fb-b2dc-42d3-bb44-ccda83ca9500" name="Default Changelist" comment="" />
+    <list default="true" id="2a1b64fb-b2dc-42d3-bb44-ccda83ca9500" name="Default Changelist" comment="Noa oef">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShopRefactor/META-INF/ShopRefactor.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShopRefactor/domain/ProductShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShopRefactor/domain/ProductShop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShopRefactor/ui/ShopUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShopRefactor/ui/ShopUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ProductShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ProductShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ShopUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ShopUI.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -15,11 +26,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1R3U2UMEBE9rv9V203V8YyTZt4g" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../printTest" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,10 +114,27 @@
       <workItem from="1568895069194" duration="1014000" />
       <workItem from="1568969185700" duration="4680000" />
       <workItem from="1569329009668" duration="4736000" />
+      <workItem from="1569346819101" duration="888000" />
+      <workItem from="1569350165454" duration="3018000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Noa oef" />
+    <option name="LAST_COMMIT_MESSAGE" value="Noa oef" />
   </component>
 </project>
