@@ -7,17 +7,29 @@ import java.util.*;
 
 public class ShopUI {
     public static void main(String[] args) {
-        Map<Integer,Product> p = new HashMap<>();
-        File producten = new File("producten.txt");
-        File producten2 = new File("producten2.txt");
+      //  Map<Integer,Product> p = new HashMap<>();
+       // File producten = new File("producten.txt");
+        //File producten2 = new File("producten2.txt");
         ProductShop productShop = new ProductShop();
+        Movie movie1 = new Movie("film over niets");
+        Game game1 = new Game("game over niets");
+        CD cd1 = new CD("cd over niets");
+        Game game2 = new Game("game2 over weeral niets");
+
+        productShop.addProduct(movie1);
+        productShop.addProduct(game2);
+        productShop.addProduct(cd1);
+        productShop.addProduct(game1);
+
+
+
 
 
 
 //Het bestand inlezen en daarvan een hashmap maken en in de hashmap steken in productshop (zie productshop voor die functie)
 //Voor elke nieuwe lijn doet het +1 voor het ID van het product
 
-        try{
+     /*   try{
             int x = 1;
             Scanner sc = new Scanner(producten);
             Product product = null;
@@ -53,10 +65,10 @@ public class ShopUI {
                     throw new DomainException("Kon het bestand niet uitschrijven");
                 }
             }
-        }, "Shutdown-thread"));
+        }, "Shutdown-thread"));*/
 
-        System.out.println(productShop.showPrice(1,5));
-        System.out.println(productShop.showProduct(1));
+       // System.out.println(productShop.showPrice(1,5));
+        //System.out.println(productShop.showProduct(1));
 
     }
 }

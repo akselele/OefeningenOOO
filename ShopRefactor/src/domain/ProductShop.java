@@ -1,9 +1,6 @@
 package domain;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ProductShop {
     private Map<Integer,Product> products;
@@ -45,6 +42,24 @@ public class ProductShop {
     public Map<Integer,Product> getProducten(){
         return products;
     }
+
+
+    public String ToString(){
+        String uit = " ";
+        for(int i = 1; i < products.size()+1; i++){
+          uit += products.get(i) + "\n\n";
+        }
+        return uit;
+    }
+
+    /*public Map<Integer,Product> sort(){
+        List<Map.Entry<Integer,Product>> list = new LinkedList<Map.Entry<Integer, Product>>(products.entrySet());
+
+        Collections.sort(list, new ComparatorByType());
+        System.out.println(list);
+        return null;
+    }*/
+
 
 
 
