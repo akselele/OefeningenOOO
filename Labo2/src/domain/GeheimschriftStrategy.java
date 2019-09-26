@@ -2,6 +2,6 @@ package domain;
 
 public interface GeheimschriftStrategy {
 
-    String algoritme();
+    String algoritme(String text);
 }
 
