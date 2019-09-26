@@ -14,7 +14,7 @@ public class CD extends Product {
 
     @Override
     public double getPrice(int days) {
-         return 1.5 * days;
+        return 1.5 * days;
     }
 
     @Override
