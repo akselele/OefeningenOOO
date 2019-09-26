@@ -1,0 +1,3 @@
+/ShopRefactor/.DS_Store
+/ShopRefactor/.idea
+/ShopRefactor/out
