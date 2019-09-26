@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2a1b64fb-b2dc-42d3-bb44-ccda83ca9500" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../GITHUB BASICS.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GITHUB BASICS.pdf" beforeDir="false" />
@@ -10,6 +11,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" />
+=======
+    <list default="true" id="2a1b64fb-b2dc-42d3-bb44-ccda83ca9500" name="Default Changelist" comment="Noa oef">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShopRefactor/META-INF/ShopRefactor.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShopRefactor/domain/ProductShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShopRefactor/domain/ProductShop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShopRefactor/ui/ShopUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShopRefactor/ui/ShopUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ProductShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ProductShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ShopUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ShopUI.java" afterDir="false" />
+>>>>>>> 00baa5c96839fa197bce710b5cd268c2daeb2e1f
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +27,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -65,6 +76,11 @@
         </entry>
       </file>
     </leaf>
+=======
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+>>>>>>> 00baa5c96839fa197bce710b5cd268c2daeb2e1f
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,11 +92,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+=======
+>>>>>>> 00baa5c96839fa197bce710b5cd268c2daeb2e1f
   <component name="ProjectId" id="1R3U2UMEBE9rv9V203V8YyTZt4g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -121,9 +140,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../printTest" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,8 +223,13 @@
       <workItem from="1568895069194" duration="1014000" />
       <workItem from="1568969185700" duration="4680000" />
       <workItem from="1569329009668" duration="4736000" />
+<<<<<<< HEAD
       <workItem from="1569345422129" duration="661000" />
       <workItem from="1569495341920" duration="897000" />
+=======
+      <workItem from="1569346819101" duration="888000" />
+      <workItem from="1569350165454" duration="3018000" />
+>>>>>>> 00baa5c96839fa197bce710b5cd268c2daeb2e1f
     </task>
     <servers />
   </component>
@@ -247,6 +273,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/domain/Product.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -370,5 +397,21 @@
         </settings>
       </state>
     </states>
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Noa oef" />
+    <option name="LAST_COMMIT_MESSAGE" value="Noa oef" />
+>>>>>>> 00baa5c96839fa197bce710b5cd268c2daeb2e1f
   </component>
 </project>
