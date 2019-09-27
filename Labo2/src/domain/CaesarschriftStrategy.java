@@ -1,23 +1,52 @@
 package domain;
 
 public class CaesarschriftStrategy implements GeheimschriftStrategy{
-    String alfabet ="abcdefghijklmnopqrstuvwxyz";
-    String uitkomst;
-
     @Override
-    public String algoritme(String text) {
+    public String encodeAlgoritme(String text) {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
         text = text.toLowerCase();
-        for(int i =1; i < text.length(); i++){
-            for(int x = 0; x < alfabet.length(); x++){
-                if(text.charAt(i) == alfabet.charAt(x)){
-                    if(x>3){
-                        x = x + 23 - 26;
-                    }
-                    uitkomst += alfabet.charAt(x);
+        String encodedtext = "";
+        int letter = 0;
+        //Ammount is hoeveel letters hij opschuift
+        int ammount = 5;
+
+        for (int i = 0; i < text.length(); i++) {
+            char chr = text.charAt(i);
+
+            for(int j = 0; j < alphabet.length(); j++){
+                if (alphabet.charAt(j) == chr){
+                    letter = j;
+                    encodedtext += alphabet.charAt(letter+ammount);
                 }
             }
+            if(!alphabet.contains(String.valueOf(chr))){
+                encodedtext += chr;
+            }
         }
-        System.out.println(uitkomst);
-        return uitkomst;
+        return encodedtext;
+    }
+
+    @Override
+    public String decodeAlgoritme(String text) {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        text = text.toLowerCase();
+        String encodedtext = "";
+        int letter = 0;
+        int ammount = 5;
+
+        for (int i = 0; i < text.length(); i++) {
+            char chr = text.charAt(i);
+
+            for(int j = 0; j < alphabet.length(); j++){
+                if (alphabet.charAt(j) == chr){
+                    letter = j;
+                    encodedtext += alphabet.charAt(letter-ammount);
+                }
+            }
+            if(!alphabet.contains(String.valueOf(chr))){
+                encodedtext += chr;
+            }
+        }
+        return encodedtext;
     }
 }

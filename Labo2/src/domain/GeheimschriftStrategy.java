@@ -2,9 +2,8 @@ package domain;
 
 public interface GeheimschriftStrategy {
 
-     String algoritme(String text);
+     String encodeAlgoritme(String text);
+     String decodeAlgoritme(String text);
 
-
-     //DECODE BIJVOEGEN IN INTERFACE AND BEIDE KLASSE, VERTALERCONTEXT PROBEREN MAKEN VIA INTERFACE NAAR JUISTE ALGORITME
 }
 
