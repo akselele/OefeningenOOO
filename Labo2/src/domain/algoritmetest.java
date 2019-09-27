@@ -7,8 +7,8 @@ public class algoritmetest {
         //System.out.println(spiegelingStrategy.algoritme("Noa is lol"));
 
         CaesarschriftStrategy caesarschriftStrategy = new CaesarschriftStrategy();
-        System.out.println(caesarschriftStrategy.encodeAlgoritme("test!"));
-        System.out.println(caesarschriftStrategy.decodeAlgoritme("uftu!"));
+        System.out.println(caesarschriftStrategy.encodeAlgoritme("dit is zeer geheim!"));
+        System.out.println(caesarschriftStrategy.decodeAlgoritme("iny nx ejjw ljmjnr!"));
 
     }
 

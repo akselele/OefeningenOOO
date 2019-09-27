@@ -16,7 +16,10 @@ public class CaesarschriftStrategy implements GeheimschriftStrategy{
             for(int j = 0; j < alphabet.length(); j++){
                 if (alphabet.charAt(j) == chr){
                     letter = j;
-                    encodedtext += alphabet.charAt(letter+ammount);
+                    if(letter+ ammount > 25 ){
+                        int aangepaste = letter + ammount - 26;
+                        encodedtext += alphabet.charAt(aangepaste);
+                    }else encodedtext += alphabet.charAt(letter+ammount);
                 }
             }
             if(!alphabet.contains(String.valueOf(chr))){
@@ -40,7 +43,10 @@ public class CaesarschriftStrategy implements GeheimschriftStrategy{
             for(int j = 0; j < alphabet.length(); j++){
                 if (alphabet.charAt(j) == chr){
                     letter = j;
-                    encodedtext += alphabet.charAt(letter-ammount);
+                    if(letter- ammount < 0 ){
+                        int aangepaste = letter - ammount + 26;
+                        encodedtext += alphabet.charAt(aangepaste);
+                    }else encodedtext += alphabet.charAt(letter-ammount);
                 }
             }
             if(!alphabet.contains(String.valueOf(chr))){
