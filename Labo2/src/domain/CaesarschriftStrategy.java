@@ -1,7 +1,7 @@
 package domain;
 
 public class CaesarschriftStrategy implements GeheimschriftStrategy{
-    @Override
+
     public String encodeAlgoritme(String text) {
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         text = text.toLowerCase();
@@ -29,7 +29,7 @@ public class CaesarschriftStrategy implements GeheimschriftStrategy{
         return encodedtext;
     }
 
-    @Override
+
     public String decodeAlgoritme(String text) {
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         text = text.toLowerCase();
