@@ -4,7 +4,7 @@ public class VertalerContext {
     String type, encodeOrDecode;
 
     public VertalerContext(String type, String encodeOrDecode){
-        if (!(type.equalsIgnoreCase("spiegel") || type.equalsIgnoreCase("caeser")||type.equalsIgnoreCase("caesarschrift")))
+        if (!(type.equalsIgnoreCase("spiegel") || type.equalsIgnoreCase("caesar")||type.equalsIgnoreCase("caesarschrift")))
         {
             throw new DomainException("geef geldige encryptiemanier");
         }

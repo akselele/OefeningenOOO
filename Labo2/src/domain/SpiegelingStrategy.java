@@ -17,7 +17,7 @@ public class SpiegelingStrategy implements GeheimschriftStrategy {
 
     @Override
     public String decodeAlgoritme(String text){
-       return encodeAlgoritme(text);
+        return encodeAlgoritme(text);
     }
 
 
