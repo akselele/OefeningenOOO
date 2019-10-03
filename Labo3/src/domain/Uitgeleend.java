@@ -3,8 +3,11 @@ package domain;
 public class Uitgeleend implements StatusState {
     Product product;
 
-    public void verwijderen(){
+    public Uitgeleend(Product product){
         this.product = product;
+    }
+
+    public void verwijderen(){
     }
 
     public void uitlenen(){
