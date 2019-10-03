@@ -1,35 +1,14 @@
 package domain;
 
-public abstract class Product {
-    private String Naam;
-    private boolean beschikbaar;
+public class Product {
+    private StatusState Uitleenbaar;
+    private StatusState Verwijderd;
+    private StatusState Beschadigd;
+    private StatusState Uitgeleend;
+    private StatusState State = Uitleenbaar;
+    private boolean uitgeleend = false;
+    private double prijs;
+    private boolean beschadigd = false;
 
-    public Product(String Naam){
-        if(Naam.trim().isEmpty()){
-            throw new DomainException("de naam kan niet leeg zijn");
-        }
-        this.Naam = Naam;
-        this.beschikbaar = true;
-    }
-
-    public String getNaam() {
-        return Naam;
-    }
-
-    public abstract String getType();
-
-    public abstract double getPrice(int days);
-    public boolean getBeschikbaar(){
-        return this.beschikbaar;
-    }
-
-    public void setBeschikbaar(boolean beschikbaar) {
-        this.beschikbaar = beschikbaar;
-    }
-
-
-    public String toString(){
-        return "Naam: " + Naam + "\nType: " + getType();
-    }
 
 }
