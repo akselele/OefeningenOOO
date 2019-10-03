@@ -1,6 +1,11 @@
 package domain;
 
 public class Beschadigd implements StatusState {
+    Product product;
+
+    public Beschadigd(Product product){
+        this.product = product;
+    }
 
     public void verwijderen(){
 
