@@ -10,5 +10,9 @@ public class Product {
     private double prijs;
     private boolean beschadigd = false;
 
+    public Product(double prijs){
+
+    }
+
 
 }

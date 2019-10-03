@@ -12,7 +12,6 @@ public class Uitleenbaar implements StatusState {
     }
 
     public void uitlenen(){
-
     }
 
     public void herstellen(){
