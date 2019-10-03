@@ -1,14 +1,8 @@
 package domain;
 
+import ui.ProductRequest;
+
 public class Beschadigd implements StatusState {
-    public void getRequest(){
-
-    }
-
-    public void requestState(){
-
-    }
-
     public void verwijderen(){
 
     }

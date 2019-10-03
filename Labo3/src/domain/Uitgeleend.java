@@ -1,16 +1,9 @@
 package domain;
 
+import ui.ProductRequest;
+
 public class Uitgeleend implements StatusState {
-
-    public void getRequest(){
-
-    }
-
-    public void requestState(){
-
-    }
-
-    public void verwijderen(){
+ public void verwijderen(){
 
     }
 
