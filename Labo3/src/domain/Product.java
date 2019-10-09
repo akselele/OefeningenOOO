@@ -12,8 +12,21 @@ public class Product {
     int id = 0;
 
     public Product(double prijs){
+        Uitleenbaar = new Uitleenbaar(this);
+        Verwijderd = new Verwijderd(this);
+        Beschadigd = new Beschadigd(this);
+        Uitgeleend = new Uitgeleend(this);
+        this.prijs = prijs;
 
 
+    }
+
+    public void setUitgeleend(boolean uitgeleend) {
+        this.uitgeleend = uitgeleend;
+    }
+
+    public void setPrijs(double prijs) {
+        this.prijs = prijs;
     }
 
     public void setBeschadigd(boolean beschadigd) {
@@ -24,32 +37,51 @@ public class Product {
         Beschadigd = beschadigd;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setState(StatusState state) {
         State = state;
     }
 
-    public void setUitgeleend(StatusState uitgeleend) {
-        Uitgeleend = uitgeleend;
-    }
-
-    public void setUitgeleend(boolean uitgeleend) {
-        this.uitgeleend = uitgeleend;
-    }
-
     public void setUitleenbaar(StatusState uitleenbaar) {
-        Uitleenbaar = uitleenbaar;
+        if (isBeschadigd())
+        {
+            throw new DomainException("is beschadigd");
+        }else {
+            Uitleenbaar = uitleenbaar;
+        }
+
+    }
+    public double getSchadevergoeding()
+    {
+        return prijs/3;
     }
 
     public void setVerwijderd(StatusState verwijderd) {
         Verwijderd = verwijderd;
     }
 
-    public void setPrijs(double prijs) {
-        this.prijs = prijs;
+    public double getUitleenPrijs() {
+        return prijs/5;
     }
 
-    public double getPrijs() {
-        return prijs;
+    public int getId() {
+        return id;
+    }
+
+
+    public void setUitgeleend(StatusState uitgeleend) {
+        Uitgeleend = uitgeleend;
+    }
+
+    public boolean isBeschadigd() {
+        return beschadigd;
+    }
+
+    public StatusState getBeschadigdState() {
+        return Beschadigd;
     }
 
     public StatusState getUitleenbaarState() {
@@ -59,24 +91,20 @@ public class Product {
     public StatusState getVerwijderdState() {
         return Verwijderd;
     }
-
-    public StatusState getBeschadigdState() {
-        return Beschadigd;
-    }
-
-    public StatusState getUitgeleendState() {
+    public StatusState getUitgeleendState()
+    {
         return Uitgeleend;
     }
 
-    public StatusState getState() {
-        return State;
+    public boolean getBeschikbaar() {
+        if(uitgeleend)
+        {
+            return false;
+        }
+        else return true;
     }
 
-    public boolean isUitgeleend() {
-        return uitgeleend;
-    }
-
-    public boolean isBeschadigd() {
-        return beschadigd;
+    public void setBeschikbaar(boolean b) {
+        this.uitgeleend= true;
     }
 }
