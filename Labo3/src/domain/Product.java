@@ -9,6 +9,7 @@ public class Product {
     private boolean uitgeleend = false;
     private double prijs;
     private boolean beschadigd = false;
+    int id = 0;
 
     public Product(double prijs){
 
@@ -51,23 +52,31 @@ public class Product {
         return prijs;
     }
 
-    public StatusState getBeschadigd() {
+    public StatusState getUitleenbaarState() {
+        return Uitleenbaar;
+    }
+
+    public StatusState getVerwijderdState() {
+        return Verwijderd;
+    }
+
+    public StatusState getBeschadigdState() {
         return Beschadigd;
+    }
+
+    public StatusState getUitgeleendState() {
+        return Uitgeleend;
     }
 
     public StatusState getState() {
         return State;
     }
 
-    public StatusState getUitgeleend() {
-        return Uitgeleend;
+    public boolean isUitgeleend() {
+        return uitgeleend;
     }
 
-    public StatusState getUitleenbaar() {
-        return Uitleenbaar;
-    }
-
-    public StatusState getVerwijderd() {
-        return Verwijderd;
+    public boolean isBeschadigd() {
+        return beschadigd;
     }
 }
