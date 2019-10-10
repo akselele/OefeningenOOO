@@ -1,5 +1,7 @@
 package ui;
-import javafx.*;
+
+import domain.Product;
+import domain.ProductShop;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -13,6 +15,7 @@ import java.awt.*;
 public class ProductFX extends Application {
     @Override
     public void start(Stage primaryStage) {
+        ProductShop ps = new ProductShop();
         primaryStage.setTitle("Input");
 
         Text text1 = new Text();
@@ -77,6 +80,40 @@ public class ProductFX extends Application {
             Integer value1 = Integer.valueOf(input.getText());
             input.setText("You chose: " + value1.toString());
             input.setEditable(false);
+
+            Stage stage2 = new Stage();
+            switch(value1){
+                case 5:
+                    primaryStage.hide();
+                    stage2.show();
+                    stage2.setTitle("Repair party item");
+                    Text textChooseRepair = new Text();
+                    textChooseRepair.setText("What item do you want to repair? (ItemID)");
+                    textChooseRepair.setX(50);
+                    textChooseRepair.setY(50);
+                    TextField inputChooseRepair = new TextField();
+                    inputChooseRepair.setLayoutX(50);
+                    inputChooseRepair.setLayoutY(70);
+                    Button buttonChooseRepairOK = new Button("OK");
+                    buttonChooseRepairOK.setLayoutX(50);
+                    buttonChooseRepairOK.setLayoutY(110);
+                    Group group2 = new Group(textChooseRepair);
+                    group2.getChildren().add(inputChooseRepair);
+                    group2.getChildren().add(buttonChooseRepairOK);
+
+                    stage2.setScene(new Scene(group2,600,300));
+                    buttonChooseRepairOK.setOnAction(e2 -> {
+                        Product product = ps.showProduct(Integer.valueOf(inputChooseRepair.getText()));
+                        textChooseRepair.setText("Schadevergoeding: $" + product.getSchadevergoeding());
+                        Text t2 = new Text();
+                        t2.setX(50);
+                        t2.setY(70);
+                        t2.setText("Uitleenprijs: $" + product.getUitleenPrijs());
+                        group2.getChildren().add(t2);
+                        inputChooseRepair.setVisible(false);
+                    });
+                    break;
+            }
         });
 
         buttonCancel.setOnAction(e -> {

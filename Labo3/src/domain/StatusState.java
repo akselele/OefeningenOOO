@@ -13,7 +13,7 @@ public interface StatusState {
     default void herstellen(){
         throw new IllegalArgumentException("Herstellen gaat niet");
     }
-    default void terugbrengen(){
+    default double terugbrengen(){
         throw new IllegalArgumentException("Terugbrengen gaat niet");
     }
 }

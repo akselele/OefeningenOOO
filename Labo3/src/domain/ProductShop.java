@@ -8,6 +8,8 @@ public class ProductShop {
 
     public ProductShop(){
         this.products = new ArrayList<>();
+        Product product = new Product(10);
+        products.add(product);
     }
 
     public void addproduct(Product p){
