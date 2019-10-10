@@ -10,7 +10,8 @@ public class Beschadigd implements StatusState {
     public void verwijderen(){
         //remove product
         //
-        //
+
+
         product.setState(product.getVerwijderdState());
     }
 

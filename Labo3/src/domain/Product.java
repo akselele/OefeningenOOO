@@ -1,21 +1,20 @@
 package domain;
 
 public class Product {
-    private StatusState Uitleenbaar;
-    private StatusState Verwijderd;
-    private StatusState Beschadigd;
-    private StatusState Uitgeleend;
-    private StatusState State = Uitleenbaar;
+    private StatusState UitleenbaarState;
+    private StatusState VerwijderdState;
+    private StatusState BeschadigdState;
+    private StatusState UitgeleendState;
+    private StatusState State = UitleenbaarState;
     private boolean uitgeleend = false;
     private double prijs;
     private boolean beschadigd = false;
-    int id = 0;
 
     public Product(double prijs){
-        Uitleenbaar = new Uitleenbaar(this);
-        Verwijderd = new Verwijderd(this);
-        Beschadigd = new Beschadigd(this);
-        Uitgeleend = new Uitgeleend(this);
+        UitleenbaarState = new Uitleenbaar(this);
+        VerwijderdState = new Verwijderd(this);
+        BeschadigdState = new Beschadigd(this);
+        UitgeleendState = new Uitgeleend(this);
         this.prijs = prijs;
 
 
@@ -34,11 +33,7 @@ public class Product {
     }
 
     public void setBeschadigd(StatusState beschadigd) {
-        Beschadigd = beschadigd;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        BeschadigdState = beschadigd;
     }
 
     public void setState(StatusState state) {
@@ -46,11 +41,10 @@ public class Product {
     }
 
     public void setUitleenbaar(StatusState uitleenbaar) {
-        if (isBeschadigd())
-        {
+        if (isBeschadigd()) {
             throw new DomainException("is beschadigd");
         }else {
-            Uitleenbaar = uitleenbaar;
+            UitleenbaarState = uitleenbaar;
         }
 
     }
@@ -60,20 +54,15 @@ public class Product {
     }
 
     public void setVerwijderd(StatusState verwijderd) {
-        Verwijderd = verwijderd;
+        VerwijderdState = verwijderd;
     }
 
     public double getUitleenPrijs() {
         return prijs/5;
     }
 
-    public int getId() {
-        return id;
-    }
-
-
     public void setUitgeleend(StatusState uitgeleend) {
-        Uitgeleend = uitgeleend;
+        UitgeleendState = uitgeleend;
     }
 
     public boolean isBeschadigd() {
@@ -81,19 +70,19 @@ public class Product {
     }
 
     public StatusState getBeschadigdState() {
-        return Beschadigd;
+        return BeschadigdState;
     }
 
     public StatusState getUitleenbaarState() {
-        return Uitleenbaar;
+        return UitleenbaarState;
     }
 
     public StatusState getVerwijderdState() {
-        return Verwijderd;
+        return VerwijderdState;
     }
     public StatusState getUitgeleendState()
     {
-        return Uitgeleend;
+        return UitgeleendState;
     }
 
     public boolean getBeschikbaar() {

@@ -8,7 +8,7 @@ public class Uitleenbaar implements StatusState {
     }
 
     public void verwijderen(){
-        //Need verwijder method in db to remove product
+        //Need verwijder method to remove product
         product.setState(product.getVerwijderdState());
     }
 
