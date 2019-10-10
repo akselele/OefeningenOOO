@@ -9,6 +9,8 @@ public class Product {
     private boolean uitgeleend = false;
     private double prijs;
     private boolean beschadigd = false;
+    int id = 0;
+
 
     public Product(double prijs){
         UitleenbaarState = new Uitleenbaar(this);
@@ -32,38 +34,26 @@ public class Product {
         this.beschadigd = beschadigd;
     }
 
-    public void setBeschadigd(StatusState beschadigd) {
-        BeschadigdState = beschadigd;
-    }
 
     public void setState(StatusState state) {
         State = state;
     }
 
-    public void setUitleenbaar(StatusState uitleenbaar) {
-        if (isBeschadigd()) {
-            throw new DomainException("is beschadigd");
-        }else {
-            UitleenbaarState = uitleenbaar;
-        }
-
+    public StatusState getState() {
+        return State;
     }
+
     public double getSchadevergoeding()
     {
         return prijs/3;
     }
 
-    public void setVerwijderd(StatusState verwijderd) {
-        VerwijderdState = verwijderd;
-    }
+
 
     public double getUitleenPrijs() {
         return prijs/5;
     }
 
-    public void setUitgeleend(StatusState uitgeleend) {
-        UitgeleendState = uitgeleend;
-    }
 
     public boolean isBeschadigd() {
         return beschadigd;
@@ -96,4 +86,9 @@ public class Product {
     public void setBeschikbaar(boolean b) {
         this.uitgeleend= true;
     }
+
+    public int getId() {
+        return id;
+    }
+
 }

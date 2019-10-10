@@ -8,7 +8,6 @@ public class Uitleenbaar implements StatusState {
     }
 
     public void verwijderen(){
-        //Need verwijder method to remove product
         product.setState(product.getVerwijderdState());
     }
 
@@ -21,7 +20,7 @@ public class Uitleenbaar implements StatusState {
         throw new IllegalArgumentException("dit product is niet beschadigd en kan niet hersteld worden");
     }
 
-    public void terugbrengen(){
+    public double terugbrengen(){
         throw new IllegalArgumentException("dit product is niet uitgeleend dus kan je het niet terugbrengen");
     }
 }

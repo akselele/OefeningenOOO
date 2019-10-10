@@ -9,14 +9,11 @@ public class Beschadigd implements StatusState {
 
     public void verwijderen(){
         //remove product
-        //
-
-
         product.setState(product.getVerwijderdState());
     }
 
     public void uitlenen(){
-        throw new IllegalArgumentException("het product is geschadigd en kan niet uitgeleend worden");
+        throw new IllegalArgumentException("Het product is geschadigd en kan niet uitgeleend worden");
     }
 
     public void herstellen(){
@@ -24,8 +21,8 @@ public class Beschadigd implements StatusState {
         product.setState(product.getUitleenbaarState());
     }
 
-    public void terugbrengen(){
-        throw new IllegalArgumentException("het product is al teruggebracht");
+    public double terugbrengen(){
+        throw new IllegalArgumentException("Het product is al teruggebracht");
     }
 }
 

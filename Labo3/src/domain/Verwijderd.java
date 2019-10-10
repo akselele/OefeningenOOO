@@ -19,7 +19,7 @@ public class Verwijderd implements StatusState {
         throw new IllegalArgumentException("Product is verwijderd");
     }
 
-    public void terugbrengen() {
+    public double terugbrengen() {
         throw new IllegalArgumentException("Product is verwijderd");
     }
 }

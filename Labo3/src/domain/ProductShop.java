@@ -3,58 +3,41 @@ package domain;
 import java.util.*;
 
 public class ProductShop {
-    private Map<Integer,Product> products;
 
+    private List<Product> products;
 
     public ProductShop(){
-        this.products = new HashMap();
+        this.products = new ArrayList<>();
     }
 
-  public void addProduct(Product product){
-        products.put(product.getId(), product);
-  }
+    public void addproduct(Product p){
+        products.add(p);
+    }
+
+    public void removeProduct(){
+        for(Product p : products){
+            if(p.getState().equals(p.getVerwijderdState())){
+                products.remove(p);
+            }
+        }
+    }
 
   public Product showProduct(int id){
        return products.get(id);
   }
 
-  /*public double showPrice(int id,int days){
-       return products.get(id).getPrice(days);
-  }*/
   public boolean isProductBeschikbaar(int id) {
-      return products.get(id).getState().equals(products.get(id).getUitleenbaarState());
+      for(Product p : products){
+         if( p.getId() == id && p.getState().equals(p.getUitleenbaarState())){
+             return true;
+         }
+      }
+      return false;
   }
 
-  //Deze functie voegt de ingelezen producten in de map
-  public void leesProducten(Map producten){
-        this.products = producten;
-  }
-
-  //Return de map om het uit te kunnen schrijven
-    public Map<Integer,Product> getProducten(){
-        return products;
-    }
-
-
-    public String ToString(){
-        String uit = " ";
-        for(int i = 1; i < products.size()+1; i++){
-          uit += products.get(i) + "\n\n";
-        }
-        return uit;
-    }
-
-    /*public Map<Integer,Product> sort(){
-        List<Map.Entry<Integer,Product>> list = new LinkedList<Map.Entry<Integer, Product>>(products.entrySet());
-
-        Collections.sort(list, new ComparatorByType());
-        System.out.println(list);
-        return null;
-    }*/
-
-
-
-
+  //during runtime deleted products stay in the list but get deleted when you exit the application
+    // different display for the fine when a product is damaged
+    //defaults in interface so code in states does not have to be written everytime
 
 
 }
