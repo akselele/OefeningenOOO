@@ -2,6 +2,7 @@ package ui;
 
 import domain.Product;
 import domain.ProductShop;
+import domain.Uitleenbaar;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -83,6 +84,60 @@ public class ProductFX extends Application {
 
             Stage stage2 = new Stage();
             switch(value1){
+                case 1:
+                    primaryStage.hide();
+                    stage2.show();
+                    stage2.setTitle("Add party item");
+                    Text textAddItem = new Text();
+                    textAddItem.setText("How much does this item cost?");
+                    textAddItem.setX(50);
+                    textAddItem.setY(50);
+                    TextField inputAddItem = new TextField();
+                    inputAddItem.setLayoutX(50);
+                    inputAddItem.setLayoutY(70);
+                    Button buttonAddItem = new Button("OK");
+                    buttonAddItem.setLayoutX(50);
+                    buttonAddItem.setLayoutY(110);
+                    Group group3 = new Group(textAddItem);
+                    group3.getChildren().add(inputAddItem);
+                    group3.getChildren().add(buttonAddItem);
+                    stage2.setScene(new Scene(group3, 600,300));
+                    buttonAddItem.setOnAction(e2 -> {
+                        Product product = new Product(Double.valueOf(inputAddItem.getText()));
+                        ps.addproduct(product);
+                        textAddItem.setText("Item added - this is item number " + Integer.valueOf(ps.getAll().size() - 1));
+                        inputAddItem.setVisible(false);
+                    });
+                    break;
+
+
+                case 2:
+                    primaryStage.hide();
+                    stage2.show();
+                    stage2.setTitle("Remove party item");
+                    Text textRemovItem = new Text();
+                    textRemovItem.setText("Which item do you want to remove? (ItemID)");
+                    textRemovItem.setX(50);
+                    textRemovItem.setY(50);
+                    TextField inputRemoveItem = new TextField();
+                    inputRemoveItem.setLayoutX(50);
+                    inputRemoveItem.setLayoutY(70);
+                    Button buttonRemoveItem = new Button("OK");
+                    buttonRemoveItem.setLayoutX(50);
+                    buttonRemoveItem.setLayoutY(110);
+                    Group group4 = new Group(textRemovItem);
+                    group4.getChildren().add(inputRemoveItem);
+                    group4.getChildren().add(buttonRemoveItem);
+                    stage2.setScene(new Scene(group4, 600,300));
+                    buttonRemoveItem.setOnAction(e2 -> {
+                        ps.showProduct(Integer.valueOf(inputRemoveItem.getText())).getVerwijderdState();
+                        textRemovItem.setText("Item added - this is item number " + Integer.valueOf(ps.getAll().size() - 1));
+                        inputRemoveItem.setVisible(false);
+                    });
+                    break;
+
+
+
                 case 5:
                     primaryStage.hide();
                     stage2.show();

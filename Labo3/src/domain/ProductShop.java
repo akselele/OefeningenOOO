@@ -13,7 +13,9 @@ public class ProductShop {
     }
 
     public void addproduct(Product p){
+        p.setBeschikbaar(true);
         products.add(p);
+
     }
 
     public void removeProduct(){
@@ -35,6 +37,10 @@ public class ProductShop {
          }
       }
       return false;
+  }
+
+  public List<Product> getAll(){
+        return products;
   }
 
   //during runtime deleted products stay in the list but get deleted when you exit the application
