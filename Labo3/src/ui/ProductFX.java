@@ -1,8 +1,6 @@
 package ui;
 
-import domain.Product;
-import domain.ProductShop;
-import domain.Uitleenbaar;
+import domain.*;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -130,8 +128,9 @@ public class ProductFX extends Application {
                     group4.getChildren().add(buttonRemoveItem);
                     stage2.setScene(new Scene(group4, 600,300));
                     buttonRemoveItem.setOnAction(e2 -> {
-                        ps.showProduct(Integer.valueOf(inputRemoveItem.getText())).getVerwijderdState();
-                        textRemovItem.setText("Item added - this is item number " + Integer.valueOf(ps.getAll().size() - 1));
+                        ps.showProduct(Integer.valueOf(inputRemoveItem.getText())).getState().verwijderen();
+
+                        textRemovItem.setText("Item removed");
                         inputRemoveItem.setVisible(false);
                     });
                     break;
