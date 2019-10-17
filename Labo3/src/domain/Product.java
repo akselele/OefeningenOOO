@@ -25,14 +25,28 @@ public class Product {
     public void setUitgeleend(boolean uitgeleend) {
         this.uitgeleend = uitgeleend;
     }
+    public void verwijderen()
+    {
+        State.verwijderen();
+    }
+    public void uitlenen()
+    {
+        State.uitlenen();
+    }
+    public void herstellen()
+    {
+        State.herstellen();
+    }
+    public void terugbrengen()
+    {
+        State.terugbrengen();
+    }
 
     public void setPrijs(double prijs) {
         this.prijs = prijs;
     }
 
-    public void setBeschadigd(boolean beschadigd) {
-        this.beschadigd = beschadigd;
-    }
+
 
 
     public void setState(StatusState state) {
