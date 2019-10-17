@@ -22,6 +22,10 @@ public class Product {
 
     }
 
+    public void verwijderen(){
+        State.verwijderen();
+    }
+
     public void setUitgeleend(boolean uitgeleend) {
         this.uitgeleend = uitgeleend;
     }
