@@ -5,7 +5,7 @@ public class Product {
     private StatusState VerwijderdState;
     private StatusState BeschadigdState;
     private StatusState UitgeleendState;
-    private StatusState State = UitleenbaarState;
+    private StatusState State;
     private boolean uitgeleend = false;
     private double prijs;
     private boolean beschadigd = false;
@@ -17,14 +17,12 @@ public class Product {
         VerwijderdState = new Verwijderd(this);
         BeschadigdState = new Beschadigd(this);
         UitgeleendState = new Uitgeleend(this);
+        State = getUitleenbaarState();
         this.prijs = prijs;
 
 
     }
 
-    public void verwijderen(){
-        State.verwijderen();
-    }
 
     public void setUitgeleend(boolean uitgeleend) {
         this.uitgeleend = uitgeleend;

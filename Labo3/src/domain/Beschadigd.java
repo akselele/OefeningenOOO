@@ -17,7 +17,7 @@ public class Beschadigd implements StatusState {
     }
 
     public void herstellen(){
-        product.setBeschadigd(false);
+        product.isBeschadigd();
         product.setState(product.getUitleenbaarState());
     }
 
