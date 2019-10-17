@@ -8,4 +8,12 @@ public class Account {
         this.balance = balance;
         this.accountNumber = accountNumber;
     }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
 }
