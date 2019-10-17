@@ -2,10 +2,12 @@ package ui;
 
 import domain.*;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -101,14 +103,52 @@ public class ProductFX extends Application {
                     group3.getChildren().add(buttonAddItem);
                     stage2.setScene(new Scene(group3, 600,300));
                     buttonAddItem.setOnAction(e2 -> {
+                        primaryStage.close();
                         Product product = new Product(Double.valueOf(inputAddItem.getText()));
                         ps.addproduct(product);
                         textAddItem.setText("Item added - this is item number " + Integer.valueOf(ps.getAll().size() - 1));
                         inputAddItem.setVisible(false);
+                        buttonAddItem.setOnAction(e3 -> {
+                            inputAddItem.clear();
+                            stage2.close();
+                            input.clear();
+                            input.setEditable(true);
+                            primaryStage.show();
+                        });
                     });
                     break;
-
-
+                case 3:
+                    primaryStage.hide();
+                    stage2.show();
+                    stage2.setTitle("Rent party item");
+                    Text textRentItem = new Text();
+                    textRentItem.setText("Which item do you want to rent?");
+                    textRentItem.setX(50);
+                    textRentItem.setY(50);
+                    TextField inputRentItem = new TextField();
+                    inputRentItem.setLayoutX(50);
+                    inputRentItem.setLayoutY(70);
+                    Button buttonRentItem = new Button("OK");
+                    buttonRentItem.setLayoutX(50);
+                    buttonRentItem.setLayoutY(110);
+                    Group group5 = new Group(textRentItem);
+                    group5.getChildren().add(inputRentItem);
+                    group5.getChildren().add(buttonRentItem);
+                    stage2.setScene(new Scene(group5, 600,300));
+                    buttonRentItem.setOnAction(e2 -> {
+                        primaryStage.close();
+                        ps.showProduct(Integer.valueOf(inputRentItem.getText())).uitlenen();
+                        textRentItem.setText("Item rented - this will cost $" + Double.valueOf(ps.showProduct(Integer.valueOf(inputRentItem.getText())).getUitleenPrijs()));
+                        inputRentItem.setVisible(false);
+                        buttonRentItem.setOnAction(e3 -> {
+                            inputRentItem.clear();
+                            stage2.close();
+                            input.clear();
+                            input.setEditable(true);
+                            primaryStage.show();
+                        });
+                    });
+                    break;
                 case 2:
                     primaryStage.hide();
                     stage2.show();
@@ -128,14 +168,70 @@ public class ProductFX extends Application {
                     group4.getChildren().add(buttonRemoveItem);
                     stage2.setScene(new Scene(group4, 600,300));
                     buttonRemoveItem.setOnAction(e2 -> {
-                        ps.showProduct(Integer.valueOf(inputRemoveItem.getText())).getState().verwijderen();
-
+                        ps.showProduct(Integer.valueOf(inputRemoveItem.getText())).verwijderen();
                         textRemovItem.setText("Item removed");
                         inputRemoveItem.setVisible(false);
+                        buttonRemoveItem.setOnAction(e3 -> {
+                            inputRemoveItem.clear();
+                            stage2.close();
+                            input.clear();
+                            input.setEditable(true);
+                            primaryStage.show();
+                        });
                     });
                     break;
-
-
+                case 4:
+                    primaryStage.hide();
+                    stage2.show();
+                    stage2.setTitle("Return party item");
+                    Text textReturnItem = new Text();
+                    textReturnItem.setText("Which item do you want to return? (ItemID)");
+                    textReturnItem.setX(50);
+                    textReturnItem.setY(50);
+                    TextField inputReturnItem = new TextField();
+                    inputReturnItem.setLayoutX(50);
+                    inputReturnItem.setLayoutY(70);
+                    Button buttonReturnItem = new Button("OK");
+                    buttonReturnItem.setLayoutX(50);
+                    buttonReturnItem.setLayoutY(110);
+                    Group group6 = new Group(textReturnItem);
+                    group6.getChildren().add(inputReturnItem);
+                    group6.getChildren().add(buttonReturnItem);
+                    stage2.setScene(new Scene(group6, 600,300));
+                    buttonReturnItem.setOnAction(e2 -> {
+                        ps.showProduct(Integer.valueOf(inputReturnItem.getText())).terugbrengen();
+                        textReturnItem.setText("Item returned");
+                        inputReturnItem.setVisible(false);
+                        buttonReturnItem.setOnAction(e3 -> {
+                            inputReturnItem.clear();
+                            stage2.close();
+                            input.clear();
+                            input.setEditable(true);
+                            primaryStage.show();
+                        });
+                    });
+                    break;
+                case 6:
+                    primaryStage.hide();
+                    stage2.show();
+                    stage2.setTitle("Show all party items");
+                    Text textShowAll = new Text();
+                    textShowAll.setText(ps.getStringAll());
+                    textShowAll.setX(50);
+                    textShowAll.setY(50);
+                    Button buttonShowAll = new Button("OK");
+                    buttonShowAll.setLayoutX(50);
+                    buttonShowAll.setLayoutY(110);
+                    Group group7 = new Group(textShowAll);
+                    group7.getChildren().add(buttonShowAll);
+                    stage2.setScene(new Scene(group7, 600,300));
+                    buttonShowAll.setOnAction(e2 -> {
+                        stage2.close();
+                        input.clear();
+                        input.setEditable(true);
+                        primaryStage.show();
+                    });
+                    break;
 
                 case 5:
                     primaryStage.hide();
@@ -158,6 +254,7 @@ public class ProductFX extends Application {
                     stage2.setScene(new Scene(group2,600,300));
                     buttonChooseRepairOK.setOnAction(e2 -> {
                         Product product = ps.showProduct(Integer.valueOf(inputChooseRepair.getText()));
+                        product.herstellen();
                         textChooseRepair.setText("Schadevergoeding: $" + product.getSchadevergoeding());
                         Text t2 = new Text();
                         t2.setX(50);
@@ -165,12 +262,20 @@ public class ProductFX extends Application {
                         t2.setText("Uitleenprijs: $" + product.getUitleenPrijs());
                         group2.getChildren().add(t2);
                         inputChooseRepair.setVisible(false);
+                        buttonChooseRepairOK.setOnAction(e3 -> {
+                            inputChooseRepair.clear();
+                            stage2.close();
+                            input.clear();
+                            input.setEditable(true);
+                            primaryStage.show();
+                        });
                     });
                     break;
             }
         });
 
         buttonCancel.setOnAction(e -> {
+            ps.removeProductAfterRun();
             System.exit(0);
         });
 

@@ -13,7 +13,7 @@ public class Uitleenbaar implements StatusState {
 
     public void uitlenen(){
         product.setUitgeleend(true);
-        product.setState(product.getUitleenbaarState());
+        product.setState(product.getUitgeleendState());
     }
 
 }
