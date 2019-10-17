@@ -1,4 +1,8 @@
 package domain;
 
-public class Auditor {
+public class Auditor implements Observer {
+    @Override
+    public void update() {
+
+    }
 }
