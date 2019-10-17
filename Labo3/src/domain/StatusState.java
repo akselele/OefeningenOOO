@@ -4,8 +4,16 @@ package domain;
 public interface StatusState {
 
     //throw exceptions as standard
-    void verwijderen();
-    void uitlenen();
-    void herstellen();
-    void terugbrengen();
+    default void verwijderen(){
+        throw new IllegalArgumentException("Verwijderen gaat niet");
+    }
+    default void uitlenen(){
+        throw new IllegalArgumentException("Uitlenen gaat niet");
+    }
+    default void herstellen(){
+        throw new IllegalArgumentException("Herstellen gaat niet");
+    }
+    default double terugbrengen(){
+        throw new IllegalArgumentException("Terugbrengen gaat niet");
+    }
 }
