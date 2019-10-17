@@ -1,5 +1,6 @@
 package domain;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,7 +30,7 @@ public class Bank implements Subject{
     @Override
     public void notifyObservers(Account account) {
         for(Observer o : observers){
-            o.update(account,totalNrOfAccounts());
+            o.update(account,totalNrOfAccounts(), LocalDate.now());
         }
     }
 

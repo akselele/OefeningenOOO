@@ -1,5 +1,7 @@
 package domain;
 
+import java.time.LocalDate;
+
 public interface Observer{
-    void update(Account a, int total);
+    String update(Account a, int total, LocalDate date);
 }
