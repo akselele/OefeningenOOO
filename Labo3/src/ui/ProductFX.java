@@ -14,7 +14,7 @@ import java.awt.*;
 public class ProductFX extends Application {
     @Override
     public void start(Stage primaryStage) {
-        ProductShop ps = new ProductShop();
+        ProductShopInMemory ps = new ProductShopInMemory();
         primaryStage.setTitle("Input");
 
         Text text1 = new Text();

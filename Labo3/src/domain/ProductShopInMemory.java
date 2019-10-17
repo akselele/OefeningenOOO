@@ -2,11 +2,11 @@ package domain;
 
 import java.util.*;
 
-public class ProductShop {
+public class ProductShopInMemory {
 
     private List<Product> products;
 
-    public ProductShop(){
+    public ProductShopInMemory(){
         this.products = new ArrayList<>();
         Product product = new Product(10);
         products.add(product);
@@ -18,7 +18,7 @@ public class ProductShop {
 
     }
 
-    public void removeProduct(){
+    public void removeProductAfterRun(){
         for(Product p : products){
             if(p.getState().equals(p.getVerwijderdState())){
                 products.remove(p);
@@ -44,8 +44,7 @@ public class ProductShop {
   }
 
   //during runtime deleted products stay in the list but get deleted when you exit the application
-    // different display for the fine when a product is damaged
-    //defaults in interface so code in states does not have to be written everytime
+
 
 
 }

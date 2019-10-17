@@ -7,18 +7,6 @@ public class Uitgeleend implements StatusState {
         this.product = product;
     }
 
-    public void verwijderen(){
-        throw new IllegalArgumentException("je kan dit product niet verwijderen, het is uitgeleend");
-    }
-
-    public void uitlenen(){
-        throw new IllegalArgumentException("Dit product is al uitgeleend");
-    }
-
-    public void herstellen(){
-        throw new IllegalArgumentException("je kan dit product niet herstellen want het is nog niet teruggebracht");
-    }
-
     public double terugbrengen(){
         double prijs = 0;
         if(product.isBeschadigd()){

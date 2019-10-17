@@ -16,11 +16,4 @@ public class Uitleenbaar implements StatusState {
         product.setState(product.getUitleenbaarState());
     }
 
-    public void herstellen(){
-        throw new IllegalArgumentException("dit product is niet beschadigd en kan niet hersteld worden");
-    }
-
-    public double terugbrengen(){
-        throw new IllegalArgumentException("dit product is niet uitgeleend dus kan je het niet terugbrengen");
-    }
 }
