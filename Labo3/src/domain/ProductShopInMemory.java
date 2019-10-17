@@ -43,6 +43,16 @@ public class ProductShopInMemory {
         return products;
   }
 
+  public String getStringAll(){
+        String x = "";
+        int y = 0;
+        for(Product product : products){
+            x += "$" + product.getUitleenPrijs() + " - " + y + "\n";
+            y++;
+        }
+        return x;
+  }
+
   //during runtime deleted products stay in the list but get deleted when you exit the application
 
 
