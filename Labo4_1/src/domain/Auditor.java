@@ -22,7 +22,7 @@ public class Auditor implements Observer {
 
     public String display(){
         String out = "";
-        out += "Account opened on " + date + "\nAccount number: " + account.getAccountNumber() + " Balance: " + account.getBalance();
+        out += "Account opened on " + date + "\nAccount number: " + account.getAccountNumber() + " Balance: " + account.getAccountBalance();
         return out;
     }
 }

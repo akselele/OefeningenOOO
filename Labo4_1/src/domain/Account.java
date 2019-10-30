@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 public class Account {
     private double balance;
-    private String accountNumber;
+    private int accountNumber;
     private LocalDate dateOfCreation;
 
-    public Account(double balance, String accountNumber){
+    public Account(double balance, int accountNumber){
         this.balance = balance;
         this.accountNumber = accountNumber;
         this.dateOfCreation = LocalDate.now();
@@ -22,7 +22,7 @@ public class Account {
         return balance;
     }
 
-    public String getAccountNumber() {
+    public int getAccountNumber() {
         return accountNumber;
     }
 
