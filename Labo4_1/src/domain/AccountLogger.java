@@ -13,8 +13,8 @@ public class AccountLogger implements Observer {
 
     @Override
     public String update(Account a, int total, LocalDate date) {
-        account = a;
-        totalAcc = total;
+        this.account = a;
+        this.totalAcc = total;
 
        return display();
     }
