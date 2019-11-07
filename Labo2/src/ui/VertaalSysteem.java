@@ -13,7 +13,7 @@ public class VertaalSysteem extends JComponent implements Accessible {
     JFrame f;
 
 
-    VertaalSysteem() {
+    public VertaalSysteem() {
         ArrayList<String> y = new ArrayList<>();
         String[] list ={"Caesar", "Spiegel"};
         String type ="";
