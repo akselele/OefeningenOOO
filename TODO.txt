@@ -1,0 +1,26 @@
+TODO LABOS OOO:
+
+Labo1:
+
+bestand kan niet gelezen worden omdat dit er nog niet is
+
+Labo2:
+
+code is af, nog geen fx
+
+Labo3:
+
+fx nog niet helemaal af (geen foutcode in fx, wel in console)
+
+Labo4.1:
+
+Af maar geen enum
+
+Labo4.2:
+
+Helemaal opnieuw
+
+Labo6:
+
+nog niet begonnen
+
