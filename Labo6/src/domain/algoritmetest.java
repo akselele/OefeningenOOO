@@ -7,8 +7,13 @@ public class algoritmetest {
         //System.out.println(spiegelingStrategy.algoritme("Noa is lol"));
 
         CaesarschriftStrategy caesarschriftStrategy = new CaesarschriftStrategy();
-        System.out.println(caesarschriftStrategy.encodeAlgoritme("dit is zeer geheim!"));
-        System.out.println(caesarschriftStrategy.decodeAlgoritme("iny nx ejjw ljmjnr!"));
+//        System.out.println(caesarschriftStrategy.encodeAlgoritme("dit is zeer geheim!"));
+//        System.out.println(caesarschriftStrategy.decodeAlgoritme("iny nx ejjw ljmjnr!"));
+        RandomCypher cypher = new RandomCypher();
+        CypherAdapter cypherAdapter = new CypherAdapter();
+        System.out.println("ddddd");
+        System.out.println(cypherAdapter.encodeAlgoritme("test"));
+
 
     }
 
