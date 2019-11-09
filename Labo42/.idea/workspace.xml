@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5cbdfac-8acf-41bd-94a6-766a8c97e9f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/Labo2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/UML.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/Launch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/domain/CaesarschriftStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/domain/DomainException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/domain/GeheimschriftStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/domain/SpiegelingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/domain/VertalerContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/domain/algoritmetest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo2/src/ui/VertaalSysteem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/Labo3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/UML.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/src/domain/DomainException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Labo3/src/ui/ProductRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/.idea/ShopRefactor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/ShopRefactor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/domain/CD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/domain/ComparatorByType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/domain/DomainException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/domain/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/domain/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/domain/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/domain/ProductShop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/ui/FxShopUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/src/ui/ShopUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/test/domain/ProductShopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShopRefactor/test/domain/ProductTest.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1T6fLIfVUlpnQukJWIbjRgf1O64" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../javafx-sdk-11.0.2/lib" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.Main" />
+      <module name="Labo42" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5cbdfac-8acf-41bd-94a6-766a8c97e9f4" name="Default Changelist" comment="" />
+      <created>1572785408644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572785408644</updated>
+      <workItem from="1572785410880" duration="180000" />
+      <workItem from="1572785633694" duration="1614000" />
+    </task>
+    <task id="LOCAL-00001" summary="observer and subject">
+      <created>1572785765140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572785765140</updated>
+    </task>
+    <task id="LOCAL-00002" summary="start code">
+      <created>1572786411114</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572786411114</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="observer and subject" />
+    <MESSAGE value="start code" />
+    <option name="LAST_COMMIT_MESSAGE" value="start code" />
+  </component>
+</project>
