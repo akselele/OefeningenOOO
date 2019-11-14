@@ -39,6 +39,7 @@ public class RandomCypher
         this.codes.put('x', 't');
         this.codes.put('y', 'q');
         this.codes.put('z', 'j');
+        this.codes.put(' ',' ');
     }
 
     public char[] encypher(final char[] message) {
