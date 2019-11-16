@@ -1,7 +1,5 @@
 package view;
 
-import domain.Spel;
-import domain.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -16,13 +14,11 @@ public class PlayerView  {
     private Label diceLabel;
     private Button playButton;
     private Label messageLabel;
-    private Spel spel = new Spel();
-    private Observer speler;
+
     private int spelerNummer;
 
     public PlayerView(int spelerNummer){
         this.spelerNummer = spelerNummer;
-        speler = new schermSpeler1(spel);
         diceLabel = new Label("beurt 1: ");
         playButton = new Button("Werp dobbelstenen");
         playButton.setOnAction(new ThrowDicesHandler());
@@ -52,7 +48,7 @@ public class PlayerView  {
     class ThrowDicesHandler implements EventHandler<ActionEvent> {
         @Override
         public void handle(ActionEvent event) {
-            spel.notifyObserver();
+
         }
     }
 }
