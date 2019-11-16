@@ -53,4 +53,8 @@ public class Game implements Subject {
         playerQueue.add(player);
         turns.put(player, new ArrayList<Turn>());
     }
+
+    public Map<Integer, Player> getPlayers() {
+        return players;
+    }
 }
